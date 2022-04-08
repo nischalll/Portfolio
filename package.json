@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nischalll.github.io",
+  "homepage": "https://nischalll.github.io/portfolio",
   "dependencies": {
     "font-awesome": "^4.7.0",
     "gh-pages": "^3.2.3",
