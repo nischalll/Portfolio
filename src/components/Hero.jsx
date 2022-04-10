@@ -46,8 +46,8 @@ export default function Hero({ handleClick, boolean }) {
           role.
         </div>
         <div className="button-container">
-          <a className="contact-button" href="#contact">
-            Contact Me !
+          <a className="contact-button" href="#">
+            Resume
           </a>
         </div>
       </div>

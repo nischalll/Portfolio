@@ -224,6 +224,7 @@ ham i{
 }
 .intro{
   width: 100%;
+  margin-top: max(150px,10%);
 }
 .twent{
   font-size: clamp(14px,5vw,26px);
@@ -460,6 +461,8 @@ list-style: none;
   position: relative;
   text-align: left;
   display: flex;
+  border: 1px solid var(--light-red);
+  border-radius: 10px;
   flex-direction: column;
   justify-content: center;
 }
@@ -477,6 +480,7 @@ list-style: none;
   padding: 10px;
   text-align: center;
   font-weight: 500;
+  border: none;
   border-radius: 10px;
   color: rgb(182, 182, 182);
   margin: 10px 0;
@@ -515,6 +519,7 @@ ul.tech-used li{
   .project-info{
     background: transparent;
     opacity: 1;
+    border: none;
   }
   .project-card{
     padding: 25px;
@@ -524,6 +529,9 @@ ul.tech-used li{
   }
   .project:nth-child(2n+0) .project-info{
     grid-area: 1 / 6 / -1 / -1;
+  }
+  .project-card{
+    border: 1px solid var(--light-red);
   }
 }
 /* Projects */
