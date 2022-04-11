@@ -1,6 +1,6 @@
 import resume from "../resume/Nischal Nandurkar Resume.pdf"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCoffee} from "@fortawesome/free-solid-svg-icons";
+import {faBars, faCoffee, faXmark} from "@fortawesome/free-solid-svg-icons";
 export default function Navbaravbar({ handleClick, boolean }) {
   return (
     <nav id="navbar" onClick={handleClick}>
@@ -15,9 +15,7 @@ export default function Navbaravbar({ handleClick, boolean }) {
             Resume
           </a>
           <span className="ham">
-            <i
-              className={boolean ? "fa-solid fa-bars" : "fa-solid fa-xmark"}
-            ></i>
+          <FontAwesomeIcon icon={boolean ? faBars : faXmark} />
           </span>
         </div>
       </div>
