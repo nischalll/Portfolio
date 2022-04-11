@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&family=Roboto+Mono&display=swap');
-
 :root {
   --black: rgb(119, 119, 119);
   --light-red: rgb(255, 107, 107);
   --lighter-red:#f8e2dc;
-  --brown-red:rgb(43, 41, 41);
+  /* --brown-red:rgb(43, 41, 41); */
+  --brown-red:rgb(37, 26, 26);
   --font-small:20px;
   --font-med:25px;
   --font-mono: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
@@ -27,14 +26,39 @@
 html {
   scroll-behavior: smooth;
 }
+.retro{
+  font-family: 'Cinzel Decorative', cursive;
+}
 body {
   position: relative;
   font-family: 'Montserrat', sans-serif, Verdana, Geneva, Tahoma;
-  background: url(./images/pictures/portfoliobg.png);
+  background: rgb(48, 33, 33);
+  /* background: rgb(3, 14, 167); */
   background-size:cover;
   font-size: 18px;
   color: var(--black);
 }
+.cursor{
+  width: 70px;
+  height: 70px;
+  background-color: var(--lighter-red);
+  font-size: 20px;
+  font-weight: 500;
+  opacity: .5;
+  z-index: 20;
+  color: rgb(29, 4, 4);
+  border: 2px solid --light-red;
+  border-radius: 50%;
+  position: absolute;
+  transition: all .3s;
+  transition-timing-function: ease-out;
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cursor::before
 .txt-highlights{
   color: var(--lighter-red);
 }
@@ -101,10 +125,11 @@ a:hover{
   font-size: 30px;
 }
 .contact-button.resume-button{
-  padding: 5px;
-  font-size: 15px;
+  padding: 7px;
+  font-size: 20px;
   margin: 0;
   align-self: flex-end;
+  border:none;
 }
 .ham-container{
   display: flex;
@@ -198,7 +223,7 @@ ham i{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
   /* min-height: 650px; */
 }
 /* particle-container */

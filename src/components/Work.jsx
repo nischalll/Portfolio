@@ -12,16 +12,16 @@ export default function Work() {
         <span className="sauce">1. </span>Where I've Worked
       </h1>
       <div className="work">
-        {companies.map((company) => (
-          <div className="company">
+        {companies.map((company, index) => (
+          <div key={company.id} className="company">
             <div className=" company-name ">
               <a className="sauce">{company.companyName}</a>
             </div>
             <div className="company-desc expand">
               <span className="txt-highlights">{company.position}</span>
               <ul>
-                {company.points.map((point) => (
-                  <li>{point}</li>
+                {company.points.map((point,index) => (
+                  <li key={index}>{point}</li>
                 ))}
               </ul>
             </div>

@@ -34,6 +34,7 @@ export default function Footer() {
             <i className="fa-solid fa-heart"></i>
           </a>
         </div>
+        <div className="footer-email">nischalnischal6@gmail.com</div>
       </div>
     </footer>
   );

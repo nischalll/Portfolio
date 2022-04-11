@@ -22,11 +22,11 @@ export default function About() {
                     <br/><br/>
                     <p>Here are a few technologies I’ve been working with recently:</p>
                     <ul className="skills-list">
-                        <li><i className="fa-brands fa-js-square"></i> JavaScript</li>
-                        <li><i className="fa-brands fa-react"></i> React</li>
-                        <li><i className="fa-brands fa-node-js"></i> Node.js</li>
-                        <li><i className="fa-solid fa-database"></i> MangoDb</li>
-                        <li><i className="fa-brands fa-git-alt"></i> Git</li>
+                        <li><i className="sauce fa-brands fa-js-square"></i> JavaScript</li>
+                        <li><i className="sauce fa-brands fa-react"></i> React</li>
+                        <li><i className="sauce fa-brands fa-node-js"></i> Node.js</li>
+                        <li><i className="sauce fa-solid fa-database"></i> MangoDb</li>
+                        <li><i className="sauce fa-brands fa-git-alt"></i> Git</li>
                     </ul>
                 </div>
         </div>

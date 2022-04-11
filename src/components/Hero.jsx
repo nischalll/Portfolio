@@ -47,7 +47,7 @@ export default function Hero({ handleClick, boolean }) {
         </div>
         <div className="button-container">
           <a className="contact-button" href="#">
-            Resume
+            Contact
           </a>
         </div>
       </div>

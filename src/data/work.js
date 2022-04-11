@@ -1,6 +1,7 @@
 export default function getWork() {
   return [
     {
+      id:1,
       companyName: "@Racreators",
       position: "web-designer intern",
       points: [
@@ -11,6 +12,7 @@ export default function getWork() {
       ],
     },
     {
+      id:2,
       companyName: "@cluebixSoftware",
       position: "Android intern",
       points: ["Created or many websites.", "Tested UI for different devices."],
