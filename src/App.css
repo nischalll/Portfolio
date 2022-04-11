@@ -37,8 +37,10 @@ body {
   background-size:cover;
   font-size: 18px;
   color: var(--black);
+  overflow-x: hidden;
 }
 .cursor{
+  display: none;
   width: 70px;
   height: 70px;
   background-color: var(--lighter-red);
@@ -54,11 +56,26 @@ body {
   transition-timing-function: ease-out;
   text-align: center;
   padding: 5px;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
-.cursor::before
+@media screen and (min-width:820px){
+  .cursor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cursor::before{
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 5px solid rgb(255, 160, 160);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 20;
+  }
+}
 .txt-highlights{
   color: var(--lighter-red);
 }
@@ -345,7 +362,7 @@ ham i{
     font-size: 20px;
   }
   .give-padding{
-    padding: 0 100px;
+    padding: 20px 100px;
   }
 }
 /* Hero */
@@ -385,7 +402,7 @@ ham i{
 .skills-list{
   display: grid;
 grid-template-columns: repeat(2, minmax(140px, 200px));
-gap: 0px 30px;
+gap: 20px 30px;
 padding: 0px;
 margin: 20px 0px 0px;
 font-size: var(--font-small);
@@ -602,6 +619,10 @@ ul.tech-used li{
   margin-bottom: 0;
   scale: 1;
 }
+#footer-email{
+  display: none;
+  position: fixed;
+}
 @media screen and (min-width:550px){
  #social-icons{
    margin: 30px;
@@ -617,6 +638,16 @@ ul.tech-used li{
   #social-icons li:hover{
     margin-bottom: 20px;
     scale: 1.2;
+  }
+  #footer-email{
+    display: block;
+    position: fixed;
+    bottom: 180px;
+    right: -70px;
+    transform: rotate(90deg);
+  }
+  #footer-email:hover{
+    margin-bottom: 20px;
   }
 }
 

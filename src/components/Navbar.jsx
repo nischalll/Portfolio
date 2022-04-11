@@ -1,16 +1,17 @@
-import React, { useState } from "react";
-
+import resume from "../resume/Nischal Nandurkar Resume.pdf"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCoffee} from "@fortawesome/free-solid-svg-icons";
 export default function Navbaravbar({ handleClick, boolean }) {
   return (
     <nav id="navbar" onClick={handleClick}>
       <div id="logo-nav">
         <h1>
           <a className="sauce name rubber" href="#hero">
-            NN
+            NN 
           </a>
         </h1>
         <div className="ham-container">
-          <a className="contact-button resume-button first-btn" href="#contact">
+          <a target="_blank" href={resume} className="contact-button resume-button first-btn">
             Resume
           </a>
           <span className="ham">
@@ -42,9 +43,7 @@ export default function Navbaravbar({ handleClick, boolean }) {
           </a>
         </li>
       </ul>
-      <a className="contact-button resume-button second-btn" href="#contact">
-        Resume
-      </a>
+      <a target="_blank" href={resume} className="contact-button resume-button second-btn">Resume</a>
     </nav>
   );
 }

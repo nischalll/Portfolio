@@ -29,11 +29,9 @@ export default function Hero({ handleClick, boolean }) {
             }}
             onInit={(typewriter) => {
               typewriter
-                .typeString("I build things for web.")
+                .typeString("I Do Frontend.")
                 .pause(2000)
                 .deleteAll()
-                .typeString("I like good food.")
-                .pause(2000)
                 .start();
             }}
           />
@@ -46,7 +44,7 @@ export default function Hero({ handleClick, boolean }) {
           role.
         </div>
         <div className="button-container">
-          <a className="contact-button" href="#">
+          <a className="contact-button" href="#contact">
             Contact
           </a>
         </div>

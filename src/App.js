@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 export default function App() {
-  let [boolean, setBoolean] = useState(false);
+  let [boolean, setBoolean] = useState(true);
   const [mousePosition, SetMousePosition] = useState({
     left: 0,
     top: 0,

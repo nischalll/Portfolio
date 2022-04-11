@@ -14,7 +14,10 @@ export default function Contact() {
           I’ll try my best to get back to you!
         </p>
         <div className="button-container">
-          <a className="contact-button" href="#contact">
+          <a
+            className="contact-button"
+            href="mailto: nischalnischal6@gmail.com"
+          >
             Say Hello !
           </a>
         </div>

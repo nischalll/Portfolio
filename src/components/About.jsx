@@ -1,5 +1,7 @@
 import React from 'react'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {fab, faJsSquare, faReact, faNodeJs, faGitSquare} from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 export default function About() {
   return (
     <section className="about-continer sections" id="about">
@@ -22,11 +24,11 @@ export default function About() {
                     <br/><br/>
                     <p>Here are a few technologies I’ve been working with recently:</p>
                     <ul className="skills-list">
-                        <li><i className="sauce fa-brands fa-js-square"></i> JavaScript</li>
-                        <li><i className="sauce fa-brands fa-react"></i> React</li>
-                        <li><i className="sauce fa-brands fa-node-js"></i> Node.js</li>
-                        <li><i className="sauce fa-solid fa-database"></i> MangoDb</li>
-                        <li><i className="sauce fa-brands fa-git-alt"></i> Git</li>
+                        <li><FontAwesomeIcon className="sauce" icon={faJsSquare} /> JavaScript</li>
+                        <li><FontAwesomeIcon className="sauce" icon={faReact}/>   React</li>
+                        <li><FontAwesomeIcon className="sauce" icon={faNodeJs}/> Node.js</li>
+                        <li><FontAwesomeIcon className="sauce" icon={faDatabase}/> MangoDb</li>
+                        <li><FontAwesomeIcon className="sauce" icon={faGitSquare}/> Git</li>
                     </ul>
                 </div>
         </div>
