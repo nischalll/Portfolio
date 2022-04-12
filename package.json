@@ -8,6 +8,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
+    "aos": "^2.3.4",
     "font-awesome": "^4.7.0",
     "gh-pages": "^3.2.3",
     "latest": "^0.2.0",

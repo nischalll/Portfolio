@@ -8,9 +8,11 @@ import {
   faGitSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+
+
 export default function About() {
   return (
-    <section className="about-continer sections" id="about">
+    <section data-aos="fade-up" className="about-continer sections" id="about">
       <h1 className="heading">
         <span className="sauce">0. </span>About Me
       </h1>

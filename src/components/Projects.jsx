@@ -13,7 +13,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section className="projects-continer sections" id="projects">
+    <section data-aos="fade-up" className="projects-continer sections" id="projects">
       <h1 className="heading">
         <span className="sauce">2. </span>Some Things I've Built
       </h1>

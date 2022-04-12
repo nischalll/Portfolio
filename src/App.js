@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -7,6 +7,8 @@ import Work from "./components/Work";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function App() {
   let [boolean, setBoolean] = useState(true);
@@ -30,6 +32,10 @@ export default function App() {
       setCursor(true);
     }
   }
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div onMouseOver={handleMouseOver} onMouseMove={handleMouseMove}>
       <div
