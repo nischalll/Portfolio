@@ -1,8 +1,13 @@
-import React from 'react'
+import React from "react";
 
-export default function Rubber({text}) {
+export default function Rubber({ text }) {
   return (
-      <span>{text.split("").map(letter=><span className='rubber'>{letter}</span>)}
-      </span>
-  )
+    <span>
+      {text.split("").map((letter, index) => (
+        <span key={index} className="rubber">
+          {letter}
+        </span>
+      ))}
+    </span>
+  );
 }

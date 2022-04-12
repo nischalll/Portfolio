@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import img from "../images/logo/image.png";
 import Rubber from "./Rubber";
 import Typewriter from "typewriter-effect";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 
 export default function Hero({ handleClick, boolean }) {
+  const [textToggle, setTextToggle] = useState(true);
+  function handleTranslate() {
+    setTextToggle(!textToggle);
+  }
   return (
     <div
       id="hero"
@@ -17,10 +23,15 @@ export default function Hero({ handleClick, boolean }) {
       </div>
       <div className="intro give-padding contain">
         <div className="txt-light-red twent">
-          Hello<span className="wave">👋</span>, my name is
+          Namaste<span className="wave">🙏</span>, my name is
         </div>
         <div className="bio name lighter-red">
-          <Rubber text="Nischal Nandurkar." />
+          <Rubber
+            text={textToggle ? "निश्चल नंदुरकर." : "Nischal Nandurkar."}
+          />{" "}
+          <span onClick={handleTranslate} className="translate">
+            <FontAwesomeIcon icon={faLanguage} />
+          </span>
         </div>
         <div className="bio what-i-do">
           <Typewriter
@@ -38,10 +49,8 @@ export default function Hero({ handleClick, boolean }) {
         </div>
 
         <div className="info">
-          I'm a final year B.Tech student who is passionate about web
-          development and looking for the right opportunity to work in an
-          environment that will help me progress into a <nobr>full-stack</nobr>{" "}
-          role.
+          I'm a front-end developer👨‍💻 from INDIA🇮🇳 with a passion for creating
+          engaging and entertaining user experiences.
         </div>
         <div className="button-container">
           <a className="contact-button" href="#contact">

@@ -1,7 +1,17 @@
-import React from "react";
-import img from "../images/project/portfolio-project.png";
+import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import getProjects from "../data/projects";
 
 export default function Projects() {
+  const [projects, setProjects] = useState(getProjects());
+
+  useEffect(() => {
+    setProjects(getProjects());
+    console.log(projects);
+  }, []);
+
   return (
     <section className="projects-continer sections" id="projects">
       <h1 className="heading">
@@ -9,56 +19,35 @@ export default function Projects() {
       </h1>
       <div className="">
         <div className="project-cards">
-          <div className="project">
-            <div className="project-img">
-              <img src={img} alt="" />
-            </div>
-            <div className="project-info">
-              <div className="project-title">Portfolio Website</div>
-              <div className="project-card">
-                Always wanted a good looking portfolio website but didn't knew
-                where to start from so i ended up creating this awesome website.
-                Might add some more things in here later.
+          {projects.map((project, index) => (
+            <div key={project.id} className="project">
+              <div className="project-img">
+                <img src={require(`../images/project/${project.image}`)} alt="" />
+                {/* <img src={require(`${project.image}`).default()} alt="" /> */}
               </div>
-              <ul className="tech-used">
-                <li>React</li>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-              <div className="project-links">
-                <a href="#">
-                  <i className="fa-brands fa-github"></i>
+              <div className="project-info">
+                <a target="_blank" href={project.projectLinkHosted}>
+                  <div className="project-title">{project.projectTitle}</div>
                 </a>
-                <a href="">
-                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="project">
-            <div className="project-img">
-              <img src={img} alt="" />
-            </div>
-            <div className="project-info">
-              <div className="project-title">Vidly</div>
-              <div className="project-card">
-                a movie rental service app to buy or rent movies easily.
-              </div>
-              <ul className="tech-used">
-                <li>React</li>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-              <div className="project-links">
-                <a href="#">
-                  <i className="fa-brands fa-github"></i>
-                </a>
-                <a href="">
-                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
+                <div className="project-card">
+                  {project.projectInfo}
+                </div>
+                <ul className="tech-used">
+                  {project.techUsed.map((tech,index)=>(
+                    <li key={index}>{tech}</li>
+                  ))}
+                </ul>
+                <div className="project-links">
+                  <a target="_blank" href={project.projectLinkGithub}>
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                  <a target="_blank" href={project.projectLinkHosted}>
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

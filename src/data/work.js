@@ -1,9 +1,10 @@
 export default function getWork() {
   return [
     {
-      id:1,
+      id: 1,
       companyName: "@Racreators",
-      position: "web-designer intern",
+      companyLink: "https://www.racreators.com/",
+      position: "web-design intern",
       points: [
         "Created Responsive eyecatching Webpages for many websites.",
         "Tested UI for different devices.",
@@ -12,10 +13,14 @@ export default function getWork() {
       ],
     },
     {
-      id:2,
+      id: 2,
       companyName: "@cluebixSoftware",
+      companyLink: "https://www.linkedin.com/in/cluebix-software-5b6681130/",
       position: "Android intern",
-      points: ["Created or many websites.", "Tested UI for different devices."],
+      points: [
+        "Created beautiful and intuitive interfaces with XML and Google's latest and Material Design guidelines.",
+        "Customized diﬀerent widgets that include Buttons, Toasts, and Dialogs.",
+      ],
     },
   ];
 }

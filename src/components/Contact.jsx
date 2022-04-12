@@ -9,16 +9,16 @@ export default function Contact() {
       <div className="flex-center">
         <h1 className="title">Get In Touch</h1>
         <p style={{ textAlign: "center", "": 700 }}>
-          Although I’m not currently looking for any new opportunities, my inbox
-          is always open. Whether you have a question or just want to say hi,
-          I’ll try my best to get back to you!
+          Shoot an Email. I would love to talk more to you. Best case scenario i
+          recommend an anime to watch. worst case scenario i recommend you an
+          anime to watch.
         </p>
         <div className="button-container">
           <a
             className="contact-button"
             href="mailto: nischalnischal6@gmail.com"
           >
-            Say Hello !
+            Shoot an email
           </a>
         </div>
       </div>

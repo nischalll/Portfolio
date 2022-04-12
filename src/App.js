@@ -17,7 +17,7 @@ export default function App() {
   let [cursor, setCursor] = useState(false);
   function handleClick() {
     setBoolean(!boolean);
-    console.log(boolean);
+    // console.log(boolean);
   }
   function handleMouseMove(e) {
     SetMousePosition({ left: e.pageX, top: e.pageY });
@@ -25,7 +25,7 @@ export default function App() {
   }
   function handleMouseOver(e){
     setCursor(false);
-    console.log(e.target)
+    // console.log(e.target)
     if(e.target.tagName=="A"||e.target.parentElement.tagName=="A"){
       setCursor(true);
     }
