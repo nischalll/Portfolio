@@ -1,19 +1,23 @@
 import React, { useState, useEffect } from "react";
 import getWork from "../data/work";
+import AOS from "aos";
+
 export default function Work() {
   const [companies, setCompanies] = useState([]);
 
   useEffect(() => {
     setCompanies(getWork());
+    AOS.init();
+    AOS.refresh();
   }, []);
   return (
-    <section className="exp-continer sections" id="experience">
-      <h1 className="heading">
+    <section data-aos="fade-up" className="exp-continer sections" id="experience">
+      <h1 data-aos="fade-up"  className="heading">
         <span className="sauce">1. </span>Where I've Worked
       </h1>
-      <div className="work">
+      <div  className="work">
         {companies.map((company, index) => (
-          <div key={company.id} className="company">
+          <div data-aos="fade-up" key={company.id} className="company">
             <div className=" company-name ">
               <a target="_blank" href={company.companyLink} className="sauce">{company.companyName}</a>
             </div>

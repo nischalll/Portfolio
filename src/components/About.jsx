@@ -26,11 +26,10 @@ export default function About() {
             found my way through it. <br />
             <br />
             Fast-forward to today, and I’ve had the privilege of working at a
-            web-development agency as a Web-Design Intern.{" "}
+            web-development agency as a {" "}
             <a className="sauce" href="https://www.racreators.com/">
-              <nobr>Web-Design Intern</nobr>
+              <nobr>Web-Design Intern.</nobr>
             </a>
-            ;
           </p>
           <br />
           <br />
