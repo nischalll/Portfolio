@@ -1,5 +1,6 @@
 :root {
   --black: rgb(119, 119, 119);
+  /* --black: rgb(53, 53, 53); */
   --light-red: rgb(255, 107, 107);
   --lighter-red:#f8e2dc;
   /* --brown-red:rgb(43, 41, 41); */
@@ -33,7 +34,7 @@ body {
   position: relative;
   font-family: 'Montserrat', sans-serif, Verdana, Geneva, Tahoma;
   background: rgb(48, 33, 33);
-  /* background: rgb(3, 14, 167); */
+  /* background: rgb(243, 240, 240); */
   background-size:cover;
   font-size: 18px;
   color: var(--black);

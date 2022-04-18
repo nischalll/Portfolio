@@ -6,10 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 
 export default function Hero({ handleClick, boolean }) {
-  const [textToggle, setTextToggle] = useState(true);
-  function handleTranslate() {
-    setTextToggle(!textToggle);
-  }
   return (
     <div
       id="hero"
@@ -27,11 +23,8 @@ export default function Hero({ handleClick, boolean }) {
         </div>
         <div className="bio name lighter-red">
           <Rubber
-            text={textToggle ? "निश्चल नंदुरकर." : "Nischal Nandurkar."}
+            text={"Nischal Nandurkar."}
           />{" "}
-          <span onClick={handleTranslate} className="translate">
-            <FontAwesomeIcon icon={faLanguage} />
-          </span>
         </div>
         <div className="bio what-i-do">
           <Typewriter
